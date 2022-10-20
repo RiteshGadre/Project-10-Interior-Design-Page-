@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    display: none;
+}
+
+body{
+   background-image: url("../images/background-image.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   max-width: 100%;
+   color: #ffff;
+   background-color: #000000;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.item{
+    font-size: 1.6rem;
+}
+
+.end-content{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.icon {
+    font-weight: 900;
+    display: none;
+}
+
+.fa-phone-volume:before, .fa-volume-control-phone:before {
+    content: "\f2a0";
+    font-size: 2.5rem;
+}
+
+.bars{
+    width: 80%;
+    margin-left: 23%;
+    margin-top: 1rem;
+    outline: 1px solid;
+}
+
+/* Main Design */
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    padding-top: 5rem;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 0 10%; */
+}
+
+h2{
+    padding-top: 7rem;
+    font-size: 6rem;
+    width: 60rem;
+}
+
+
+.fa-puzzle-piece:before {
+    content: "\f12e";
+}
+
+.card1-inside{
+    width: 230px;
+    height: 130px;
+    background-color: #31475897;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.card1-icon{
+    background-color: #fff;
+    color: black;
+    width: 55px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1-icon i{
+    font-size: 2.3rem;
+}
+
+.card1-text{
+    font-size: 1.5rem;
+}
+
+.vertical-bar{
+    height: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    /* right: 297px; */
+    position: relative;
+    left: 17.6rem;
+    width: 0;
+    outline: 1px solid;
+}
+
+.dot1{
+    height: 2rem;
+    background-color: white;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    left: 16.7rem;
+}
+
+.row2{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* padding: 5px 10px; */
+    outline: 2px solid white;
+    height: 6.1rem;
+    width: 21rem;
+    text-align: center;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2{
+    display: flex;
+}
+
+.card2-inside{
+    width: 23rem;
+    height: 13rem;
+    background-color: #31475897;
+    padding: 2rem;
+    position: relative;
+    right: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.card2-icon{
+    height: 3.5rem;
+    width: 5.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2-icon i{
+    font-size: 2.3rem;
+}
+
+.card2-text{
+    font-size: 1.5rem;
+}
+
+.horizontal-bar{
+    height: 0;
+    width: 7rem;
+    position: relative;
+    right: 12.9rem;
+    top: 4.8rem;
+    outline: 1px solid;
+}
+
+.dot2{
+    height: 2rem;
+    background-color: white;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    right: 5.8rem;
+    top: 3.7rem;
+}
+
+@media screen and (max-width: 850px){
+    haeder{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .items{
+        display: none;
+    }
+
+    .end-content{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+        font-size: 3rem;
+    }
+
+   .bars{
+        display: none;
+    }
+    /* main design */
+    .main{
+        padding: 2rem 0;
+        position: relative;
+        bottom: 7rem;
+        gap: 2rem;
+    }
+    
+    .row1{
+        flex-direction: column;
+    }
+
+    .row2{
+        flex-direction: column-reverse;
+    }
+
+    .card2{
+        position: relative;
+        bottom: 26.4rem;
+        left: 39rem;
+    }
+
+    .btn{
+        position: relative;
+        bottom: 16rem;
+        left: 15rem
+    }
+}
