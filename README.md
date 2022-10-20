@@ -6,7 +6,7 @@
 
 ![](./images/10.png)
 
-[Click Here](ritesh-interior-landing-page.netlify.app)
+[Click Here](https://ritesh-interior-landing-page.netlify.app/)
 
 # ![](https://img.shields.io/badge/-Technologies%20Used-blue)
 ```
